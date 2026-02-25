@@ -27,7 +27,7 @@ const Hero = () => {
   ]
 
   return (
-      <div className='sm:flex hidden bg-[#f5efe6] justify-center w-full py-10'>
+      <div className='sm:flex hidden bg-[#f5efe6] justify-center w-full py-10 mt-20'>
             <Swiper
       modules={[Autoplay, Pagination]}
       slidesPerView={1} 

@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Categories = () => {
   return (
-    <div className='bg-[#f5efe6] py-10 flex flex-col items-center justify-center'>
+    <div className='bg-[#f5efe6] py-10 flex flex-col items-center justify-center mt-20'>
         <p className='sm:text-3xl text-xl font-mono text-center text-gray-700 '>Modern Interpretations in Diamond</p>
         <p className='text-center sm:text-2xl text-md font-serif mt-1 text-gray-600'>Curated for the Festival of Diamonds</p>
 
