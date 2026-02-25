@@ -7,6 +7,8 @@ import banner4 from './Images/banner-4.jpeg'
 import party from './Images/partywear.png'
 import necless from './Images/necless.png'
 import festivewear from './Images/festivewear.png'
+import chains from './Images/chains.png'
+import earrings from './Images/earrings.png'
 
 export const assets = {
     Hero,
@@ -17,5 +19,7 @@ export const assets = {
 
     party,
     necless,
-    festivewear
+    festivewear,
+    chains,
+    earrings
 }
