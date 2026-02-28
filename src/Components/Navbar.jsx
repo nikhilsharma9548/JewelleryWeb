@@ -48,7 +48,7 @@ const Navbar = () => {
         transition-all duration-300 z-50
         ${scrolled ? "h-20 shadow-lg" : "h-12"}`}
       >
-         <div className='gap-5 sm:text-xl text-sm flex font-mono items-center justify-between'>
+         <div className='gap-5 sm:text-base text-sm flex font-mono items-center justify-between'>
           <p>Home</p>
           <p>About</p>
           <p>Categories</p>
