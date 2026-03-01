@@ -21,7 +21,7 @@ const Bestseller = () => {
                 ))      
             }
         </div>
-        <button className='mx-auto block mt-5 bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition duration-300'>See More</button>
+        <button className='mx-auto block mt-5 text-white px-6 py-2 rounded-lg border-amber-500 border-2 bg-gray-800'>See More</button>
     </div>
   )
 }
