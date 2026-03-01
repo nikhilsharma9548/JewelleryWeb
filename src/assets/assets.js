@@ -15,6 +15,12 @@ import festivewear from './Images/festivewear.png'
 import chains from './Images/chains.png'
 import earrings from './Images/earrings.png'
 
+import NewAdd1 from './Images/newadd1.png'
+import NewAdd2 from './Images/newadd2.png'  
+import NewAdd3 from './Images/newadd3.png'
+import NewAdd4 from './Images/newadd4.png'
+import NewAdd5 from './Images/newadd5.png'
+
 export const assets = {
     Hero,
     banner1,
@@ -31,5 +37,11 @@ export const assets = {
     necless,
     festivewear,
     chains,
-    earrings
+    earrings,
+
+    NewAdd1,
+    NewAdd2,    
+    NewAdd3,
+    NewAdd4,
+    NewAdd5
 }
