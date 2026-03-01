@@ -18,7 +18,7 @@ const Categories = () => {
   ]
 
   return (
-    <div className='bg-[#f5efe6] py-10 flex flex-col items-center mt-10 sm:px-20'>
+    <div className='bg-[#f5efe6] py-10 flex flex-col items-center mt-5 sm:px-20'>
 
       <p className='sm:text-3xl text-xl font-mono text-center text-gray-700'>
         Modern Interpretations in Diamond
@@ -72,7 +72,7 @@ const Categories = () => {
         alt=""
         className="w-96 h-80 object-cover rounded-xl shadow-xl"
       />
-      <p className='text-base'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis commodi omnis laboriosam ut modi laudantium qui suscipit incidunt.</p>
+      <p className='text-base px-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis commodi omnis laboriosam ut modi laudantium qui suscipit incidunt.</p>
     </SwiperSlide>
   ))}
 </Swiper>

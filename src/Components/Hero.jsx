@@ -73,7 +73,7 @@ const Hero = () => {
     </Swiper>
       </div> 
 
-    <div className='md:hidden flex bg-[#f5efe6] justify-center items-center w-full mt-3'>
+    <div className='md:hidden flex bg-[#f5efe6] justify-center items-center w-full mt-10'>
             <Swiper
       modules={[Autoplay, Pagination]}
       slidesPerView={1} 
