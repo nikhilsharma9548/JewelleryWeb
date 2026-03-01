@@ -70,7 +70,7 @@ const Categories = () => {
       <img
         src={img}
         alt=""
-        className="w-96 h-72 object-cover rounded-xl shadow-xl"
+        className="w-96 h-80 object-cover rounded-xl shadow-xl"
       />
     </SwiperSlide>
   ))}
