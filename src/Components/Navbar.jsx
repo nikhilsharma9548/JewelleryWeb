@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     
     <>
-    <div className='h-16  bg-[#ffffff] w-full flex items-center justify-between sm:px-7 px-3'>
+    <div className='h-16  bg-[#ffffff] w-full flex items-center justify-between sm:px-7 px-3 max-md:fixed top-0 z-50'>
         <p className='md:text-2xl  font-semibold font-cusive underline'>Jewellery</p>
 
         <div className='hidden md:w-96 lg:w-1/3 justify-center items-center md:flex gap-3'>
@@ -44,7 +44,7 @@ const Navbar = () => {
 
     </div>
       <div
-        className={`bg-[#d4af37] sticky top-0 w-full flex items-center justify-center 
+        className={`bg-[#d4af37] sticky top-0 w-full hidden md:flex items-center justify-center 
         transition-all duration-300 z-50
         ${scrolled ? "h-20 shadow-lg" : "h-12"}`}
       >

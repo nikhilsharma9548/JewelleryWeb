@@ -21,7 +21,6 @@ const Categories = () => {
                 <img src={assets.necless} className='w-64 rounded shadow-2xl shadow-olive-800'/>
             </div>
 
-
             <div className='max-w-64 flex flex-col items-center justify-center gap-2 relative hover:scale-105 duration-300'>
                 <img src={assets.party} className='w-64  rounded shadow-2xl shadow-olive-800'/>
             </div>
@@ -29,9 +28,6 @@ const Categories = () => {
             <div className='max-w-64 flex flex-col items-center justify-center gap-2 relative hover:scale-105 duration-300'>
                 <img src={assets.chains} className='w-64  rounded shadow-2xl shadow-olive-800'/>
             </div>
-
-            
-
         </div>
     </div>
   )

@@ -4,6 +4,8 @@ import banner2 from './Images/banner-2.jpeg'
 import banner3 from './Images/banner-3.jpeg'
 import banner4 from './Images/banner-4.jpeg'
 
+import banner5 from './Images/banner-5.png'
+
 import party from './Images/partywear.png'
 import necless from './Images/necless.png'
 import festivewear from './Images/festivewear.png'
@@ -16,6 +18,8 @@ export const assets = {
     banner2,
     banner3,
     banner4,
+    // Moblie view banners
+    banner5,
 
     party,
     necless,
