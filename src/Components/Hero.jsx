@@ -66,7 +66,7 @@ const Hero = () => {
         disableOnInteraction: false,
       }}
       pagination={{ clickable: true }}
-      className="w-full h-full lg:rounded-xl "
+      className="w-full h-screen lg:rounded-xl "
     >
       {slides.map((slides) =>(
         <SwiperSlide key={slides.alt}>
