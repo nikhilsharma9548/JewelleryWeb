@@ -19,8 +19,10 @@ import NewAdd1 from './Images/newadd1.png'
 import NewAdd2 from './Images/newadd2.png'  
 import NewAdd3 from './Images/newadd3.png'
 import NewAdd4 from './Images/newadd4.png'
-import NewAdd5 from './Images/newadd5.png'
-
+// import NewAdd5 from './Images/newadd5.png'
+// import NewAdd6 from './Images/newadd6.png'
+// import NewAdd7 from './Images/newadd7.png'
+// import NewAdd8 from './Images/newadd8.png'
 export const assets = {
     Hero,
     banner1,
@@ -43,5 +45,5 @@ export const assets = {
     NewAdd2,    
     NewAdd3,
     NewAdd4,
-    NewAdd5
+
 }
