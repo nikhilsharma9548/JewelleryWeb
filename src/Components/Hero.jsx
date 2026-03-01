@@ -9,20 +9,39 @@ const Hero = () => {
 
   const slides = [
     {
-      image: assets.banner5,
+      image: assets.banner1,
       alt: "Jewellery 1"
     },
     {
-      image: assets.banner5,
+      image: assets.banner2,
       alt: "Jewellery 2"
     },
     {
-      image: assets.banner5,
+      image: assets.banner3,
       alt: "Jewellery 3"
     },
     {
-      image: assets.banner5,
+      image: assets.banner4,
       alt: "Jewellery 4"
+    }        
+  ]
+
+  const slides2 = [
+    {
+      image: assets.banner5,
+      alt: "Jewellery 5"
+    },
+    {
+      image: assets.banner6,
+      alt: "Jewellery 6"
+    },
+    {
+      image: assets.banner7,
+      alt: "Jewellery 7"
+    },
+    {
+      image: assets.banner8,
+      alt: "Jewellery 8"
     }        
   ]
 
@@ -66,13 +85,13 @@ const Hero = () => {
         disableOnInteraction: false,
       }}
       pagination={{ clickable: true }}
-      className="w-full h-screen lg:rounded-xl "
+      className="w-full  lg:rounded-xl "
     >
-      {slides.map((slides) =>(
+      {slides2.map((slides) =>(
         <SwiperSlide key={slides.alt}>
           <img
             src={slides.image}
-            className="w-full lg:rounded-xl"
+            className="w-full h-screen lg:rounded-xl object-cover"
             alt={slides.alt}
           />
         </SwiperSlide>
