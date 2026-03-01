@@ -91,7 +91,7 @@ const Hero = () => {
         <SwiperSlide key={slides.alt}>
           <img
             src={slides.image}
-            className="w-full h-screen lg:rounded-xl object-cover"
+            className="w-full lg:rounded-xl object-cover"
             alt={slides.alt}
           />
         </SwiperSlide>
