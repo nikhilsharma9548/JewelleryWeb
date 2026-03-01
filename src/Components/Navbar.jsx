@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 import { HeartIcon } from "@heroicons/react/24/outline";
 import { UserIcon } from "@heroicons/react/24/outline";
+import { Bars3CenterLeftIcon } from '@heroicons/react/16/solid';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';  
 
 const Navbar = () => {
@@ -22,8 +23,13 @@ const Navbar = () => {
   return (
     
     <>
-    <div className='h-16  bg-[#ffffff] w-full flex items-center justify-between sm:px-7 px-3 max-md:fixed top-0 z-50'>
-        <p className='md:text-2xl  font-semibold font-cusive underline'>Jewellery</p>
+    <div className='h-16  bg-[#ffffff] w-full flex items-center justify-between sm:px-7 px-2 max-md:fixed top-0 z-50'>
+      
+        <p className='md:text-2xl flex justify-center items-center gap-3  font-semibold font-cusive underline'>
+           <button className='text-black md:hidden'><Bars3CenterLeftIcon className="h-6 w-6" /></button>
+          Jewellery
+        </p>
+       
 
         <div className='hidden md:w-96 lg:w-1/3 justify-center items-center md:flex gap-3'>
           <span className='flex gap-2 w-full items-center border border-gray-400 rounded px-3 py-1.5 text-gray-500'>
