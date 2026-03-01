@@ -36,3 +36,14 @@
   gap: 7px !important;
 
 }
+/*  */
+
+.swiper-slide {
+  opacity: 0.5;
+  transition: 0.4s ease;
+}
+
+.swiper-slide-active {
+  transform: scale(1.25);
+  opacity: 1;
+}

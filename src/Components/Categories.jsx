@@ -1,34 +1,82 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, FreeMode } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+
 const Categories = () => {
+
+  const images = [
+    assets.earrings,
+    assets.festivewear,
+    assets.necless,
+    assets.party,
+    assets.chains
+  ]
+
   return (
-    <div className='bg-[#f5efe6] py-10 flex flex-col items-center justify-center sm:mt-20 sm:px-20'>
-        <p className='sm:text-3xl text-xl font-mono text-center text-gray-700 '>Modern Interpretations in Diamond</p>
-        <p className='text-center sm:text-2xl text-md font-serif mt-1 text-gray-600'>Curated for the Festival of Diamonds</p>
+    <div className='bg-[#f5efe6] py-10 flex flex-col items-center mt-10 sm:px-20'>
 
-        <div className='flex max-w-7xl justify-center items-center md:gap-5 gap-3 sm:mt-10 mt-5 max-sm:px-10 '>
+      <p className='sm:text-3xl text-xl font-mono text-center text-gray-700'>
+        Modern Interpretations in Diamond
+      </p>
 
-            <div className='max-w-64 flex flex-col items-center justify-center gap-2 relative hover:scale-105 duration-300'>
-                <img src={assets.earrings} className='w-64  rounded shadow-2xl shadow-olive-800'/>
-            </div>
+      <p className='text-center sm:text-2xl text-md font-serif mt-1 text-gray-600'>
+        Curated for the Festival of Diamonds
+      </p>
 
-            <div className='max-w-64 flex flex-col items-center justify-center gap-2 relative hover:scale-105 duration-300 transform transition-all'>
-                <img src={assets.festivewear} className='w-64 rounded shadow-2xl shadow-olive-800'/>
-            </div>
+      {/* ================= DESKTOP VIEW ================= */}
+      <div className='hidden sm:flex max-w-7xl justify-center items-center md:gap-5 gap-3 sm:mt-10 mt-5'>
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className='max-w-64 hover:scale-105 duration-300'
+          >
+            <img
+              src={img}
+              className='w-64 rounded shadow-2xl'
+            />
+          </div>
+        ))}
+      </div>
 
-            <div className='max-w-64 flex flex-col items-center justify-center gap-2 relative hover:scale-105 duration-300'>
-                <img src={assets.necless} className='w-64 rounded shadow-2xl shadow-olive-800'/>
-            </div>
+      {/* ================= MOBILE SWIPER ================= */}
+      {/* ================= MOBILE SWIPER ================= */}
+<div className="sm:hidden w-full mt-10">
 
-            <div className='max-w-64 flex flex-col items-center justify-center gap-2 relative hover:scale-105 duration-300'>
-                <img src={assets.party} className='w-64  rounded shadow-2xl shadow-olive-800'/>
-            </div>
+  <Swiper
+  modules={[EffectCoverflow, FreeMode]}
+  effect="coverflow"
+  centeredSlides={true}
+  slidesPerView={1.6}
+  freeMode={true}
+  grabCursor={true}
+  loop={true}
+  spaceBetween={20}
+  className="w-full px-6"
+  coverflowEffect={{
+    rotate: 0,
+    stretch: 0,
+    depth: 120,
+    modifier: 2,
+    slideShadows: false,
+  }}
+>
+  {images.map((img, index) => (
+    <SwiperSlide key={index} className="flex justify-center">
+      <img
+        src={img}
+        alt=""
+        className="w-96 h-72 object-cover rounded-xl shadow-xl"
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
+</div>
 
-            <div className='max-w-64 flex flex-col items-center justify-center gap-2 relative hover:scale-105 duration-300'>
-                <img src={assets.chains} className='w-64  rounded shadow-2xl shadow-olive-800'/>
-            </div>
-        </div>
     </div>
   )
 }
