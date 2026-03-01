@@ -5,7 +5,7 @@ import Categories from '../Components/Categories'
 const Home = () => {
   return (
     <div className=''>
-        {/* <Hero/> */}
+        <Hero/>
         <Categories/>
         
     </div>
