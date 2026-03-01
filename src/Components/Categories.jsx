@@ -72,6 +72,7 @@ const Categories = () => {
         alt=""
         className="w-96 h-80 object-cover rounded-xl shadow-xl"
       />
+      <p className='text-base'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis commodi omnis laboriosam ut modi laudantium qui suscipit incidunt.</p>
     </SwiperSlide>
   ))}
 </Swiper>
