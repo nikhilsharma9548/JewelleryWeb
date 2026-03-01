@@ -33,11 +33,11 @@ const Categories = () => {
         {images.map((img, index) => (
           <div
             key={index}
-            className='max-w-64 hover:scale-105 duration-300'
+            className='max-w-64 '
           >
             <img
               src={img}
-              className='w-64 rounded shadow-2xl'
+              className='w-64 rounded shadow-2xl hover:scale-105 transition-transform duration-300'
             />
           </div>
         ))}

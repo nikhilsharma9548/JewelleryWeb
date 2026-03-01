@@ -16,7 +16,7 @@ const Bestseller = () => {
             {
                 bestsellers.map((item,index) => (
                     <div key={index} className='lg:w-64 lg:h-80 max-w-2xl rounded-lg overflow-hidden shadow-lg'>
-                        <img src={item} alt={`Bestseller ${index + 1}`} className='w-full h-full object-cover' />
+                        <img src={item} alt={`Bestseller ${index + 1}`} className='w-full h-full object-cover transition-transform duration-300 hover:scale-105' />
                     </div>
                 ))      
             }
