@@ -18,7 +18,7 @@ const Categories = () => {
   ]
 
   return (
-    <div className='bg-[#f5efe6] py-10 flex flex-col items-center mt-5 sm:px-20'>
+    <div className='bg-[#f5efe6] py-10 flex flex-col items-center mt-5 md:px-20'>
 
       <p className='sm:text-3xl text-xl font-mono text-center text-gray-700'>
         Modern Interpretations in Diamond
@@ -29,7 +29,7 @@ const Categories = () => {
       </p>
 
       {/* ================= DESKTOP VIEW ================= */}
-      <div className='hidden sm:flex max-w-7xl justify-center items-center md:gap-5 gap-3 sm:mt-10 mt-5'>
+      <div className='hidden md:flex max-w-7xl justify-center items-center md:gap-5 gap-3 sm:mt-10 mt-5'>
         {images.map((img, index) => (
           <div
             key={index}
@@ -45,7 +45,7 @@ const Categories = () => {
 
       {/* ================= MOBILE SWIPER ================= */}
       {/* ================= MOBILE SWIPER ================= */}
-<div className="sm:hidden w-full mt-10">
+<div className="md:hidden w-full mt-10">
 
   <Swiper
   modules={[EffectCoverflow, FreeMode]}
