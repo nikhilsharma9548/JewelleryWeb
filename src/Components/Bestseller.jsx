@@ -9,8 +9,8 @@ const Bestseller = () => {
     ]
   return (
     <div className='my-5'>
-        <h1 className='px-4 text-3xl font-mono  '>Bestseller</h1>
-        <div className='h-1 rounded-full bg-gray-600 w-32 mx-5'></div>
+        <h1 className='px-4 text-3xl text-gray-700 font-mono  '>Some Unique Collections</h1>
+        <div className='h-1 rounded-full bg-gray-600 w-64 mx-5'></div>
 
         <div className='grid grid-cols-2 md:grid-cols-4 max-w-6xl  gap-4 justify-center mt-5 px-2 mx-auto'>
             {

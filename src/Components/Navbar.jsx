@@ -5,6 +5,7 @@ import { HeartIcon } from "@heroicons/react/24/solid";
 import { UserIcon } from "@heroicons/react/24/outline";
 import { Bars3CenterLeftIcon } from '@heroicons/react/16/solid';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';  
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -36,7 +37,7 @@ const Navbar = () => {
             <MagnifyingGlassIcon className="h-5 w-5 text-gray-500" />
             <input type="text" 
               placeholder="Find Your Jewellery" 
-              className="outline-none focus:ring-2 focus:ring-yellow-500 w-full"/>
+              className="outline-none w-full"/>
           </span>
           <button className='bg-yellow-400 hover:bg-yellow-500 border text-black px-4 py-1.5 rounded'>Search</button>
         </div>
@@ -55,10 +56,10 @@ const Navbar = () => {
         ${scrolled ? "h-20 shadow-lg" : "h-12"}`}
       >
          <div className='gap-5 sm:text-base text-sm flex font-mono items-center justify-between'>
-          <p>Home</p>
-          <p>About</p>
-          <p>Categories</p>
-          <p>Products</p>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/categories">Categories</Link>
+          <Link to="/products">Products</Link>
         </div>
       </div>
     </>

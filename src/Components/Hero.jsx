@@ -47,7 +47,7 @@ const Hero = () => {
 
   return (
       <>
-      <div className='hidden md:flex bg-[#f5efe6] justify-center w-full mt-3'>
+      <div className='hidden md:flex bg-[#f5efe6] justify-center w-full mt-1'>
             <Swiper
       modules={[Autoplay, Pagination]}
       slidesPerView={1} 
@@ -59,13 +59,13 @@ const Hero = () => {
         disableOnInteraction: false,
       }}
       pagination={{ clickable: true }}
-      className="w-full lg:rounded-xl "
+      className="w-full "
     >
       {slides.map((slides) =>(
         <SwiperSlide key={slides.alt}>
           <img
             src={slides.image}
-            className="w-full lg:rounded-xl"
+            className="w-full"
             alt={slides.alt}
           />
         </SwiperSlide>
